@@ -1,0 +1,55 @@
+.contactForm
+    display: grid
+    width: 100%
+    height: 100%
+
+.contactField
+    margin: 15px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    text-align: left
+
+.contactInput
+    border-radius: 20px
+    padding: 0 10px 0 10px
+    border: 1px solid #f6ff95
+    text-align: center
+
+.contactLabel
+    padding: 0 10px 0 10px
+    text-align: left
+
+.contactSend
+    display: grid
+    grid-template-columns: 1fr 1fr
+    justify-content: center
+    align-items: center
+    justify-items: center
+
+.contactButton
+    border-radius: 20px
+    padding: 10px 20px 10px 20px
+    border: none
+    text-align: center
+    background: linear-gradient(to right,#f6ff95,#FFFFFF,#BDBDBD)
+    width: 80%
+    display: grid
+    grid-template-columns: 1fr
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    margin-top: 20px
+
+.contactButton:hover
+    animation-name: button
+    animation-duration: 1s
+
+@keyframes button
+    0%
+        background: linear-gradient(to right,#f6ff95,#FFFFFF,#BDBDBD)
+    33%
+        background: linear-gradient(to right,#388E3C,#f6ff95,#FFFFFF)
+    66%
+        background: linear-gradient(to right,#BDBDBD,#388E3C,#f6ff95)
+    100%
+        background: linear-gradient(to right,#FFFFFF,#BDBDBD,#388E3C)

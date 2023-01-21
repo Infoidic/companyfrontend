@@ -4,6 +4,7 @@ import { useContext } from 'react'
 import pageContext from '../context/pageContext'
 import '../styles/Home.sass'
 import Section from './Section'
+import Section2 from './Section2'
 
 const Home = () => {
 	const { bgTheme } = useContext(pageContext)
@@ -31,7 +32,7 @@ const Home = () => {
 			</section>
 			<section className={theme2}>
 				<div className='containerSection'>
-					<Section></Section>
+					<Section2></Section2>
 				</div>
 			</section>
 		</div>
