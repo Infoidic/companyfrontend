@@ -1,0 +1,41 @@
+.container
+    display: grid
+    grid-template-rows: 200px, 1fr
+.imgSection
+    width: 320px
+    height: 200px
+    animation-name: move
+    animation-duration: 2s
+    margin: 0
+
+.imgSection:hover
+    animation-name: moveOff
+    animation-duration: 2s easy-in-out
+
+.textAudio
+    text-align: justify
+    padding: 0 60px 0 60px
+
+@keyframes move
+    0%
+        transform: rotate(0deg)
+    25%
+        transform: rotate(45deg)
+    50%
+        transform: rotate(0deg)
+    75%
+        transform: rotate(-45deg)
+    100%
+        transform: rotate(0deg)
+
+@keyframes moveOff
+    0%
+        transform: rotate(0deg)
+    25%
+        transform: rotate(45deg)
+    50%
+        transform: rotate(0deg)
+    75%
+        transform: rotate(-45deg)
+    100%
+        transform: rotate(0deg)

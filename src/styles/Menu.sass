@@ -1,18 +1,72 @@
+.container
+    display: grid
+    justify-items: center
+
+.left, .top
+    background-color: #FFFFFF95
+    border-radius: 10px
+
 .left
     display: grid
-    grid-template-columns: repeat(5, 1fr)
+    grid-template-columns: 1fr 1fr 1fr 35px 35px
     position: fixed
     left: 0px
     writing-mode: vertical-rl
     align-items: center
+    margin: 10px 0 0 10px
 
 .top
     display: grid
-    grid-template-columns: repeat(5, 1fr)
+    grid-template-columns: 1fr 1fr 1fr 35px 35px
     position: fixed
     align-items: center
     top: 0px
+    margin-top: 10px
 
 .link
     padding: 10px
     text-decoration: none
+    color: #24242459
+
+.link:hover
+    color: #24242495
+    font-size: 1.2rem
+    text-decoration: underline
+    font-style: bold
+
+.link.active
+    color: #24242495
+    font-size: 1.2rem
+    text-decoration: underline
+    font-style: bold
+
+.imgMenu
+    width: 15px
+    height: 15px
+    color: #24242495
+    animation-name: rotateOff
+    animation-duration: 1s
+
+.imgMenu:hover, .theme:hover
+    animation-name: rotate
+    animation-duration: 1s
+
+.theme
+    height: 15px
+    width: 15px
+    background: linear-gradient(to right, #f6ff95, #000000)
+    border-radius: 20px
+    animation-name: rotateOff
+    animation-duration: 1s
+
+@keyframes rotate
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+
+@keyframes rotateOff
+    0%
+        transform: rotate(360deg)
+    100%
+        transform: rotate(0deg)

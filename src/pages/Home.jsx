@@ -3,6 +3,7 @@ import Menu from '../components/Menu'
 import { useContext } from 'react'
 import pageContext from '../context/pageContext'
 import '../styles/Home.sass'
+import Section from './Section'
 
 const Home = () => {
 	const { bgTheme } = useContext(pageContext)
@@ -23,8 +24,16 @@ const Home = () => {
 	return (
 		<div>
 			<Menu></Menu>
-			<section className={theme1}>Section1</section>
-			<section className={theme2}>Section2</section>
+			<section className={theme1}>
+				<div className='containerSection'>
+					<Section></Section>
+				</div>
+			</section>
+			<section className={theme2}>
+				<div className='containerSection'>
+					<Section></Section>
+				</div>
+			</section>
 		</div>
 	)
 }
