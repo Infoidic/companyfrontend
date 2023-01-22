@@ -34,7 +34,10 @@ const Menu = () => {
 				<NavLink className='link' to='/Software'>
 					Software
 				</NavLink>
-				<Link className='link' onClick={handleTheme}>
+				<Link
+					className='link'
+					aria-label='Cambio de tema'
+					onClick={handleTheme}>
 					<div className='theme'></div>
 				</Link>
 				<Link className='link' onClick={handleMenu}>
